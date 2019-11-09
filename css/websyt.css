@@ -5,10 +5,47 @@
 }
 
 header{
+    //position: relative;
     background-image: /* enable this to see ---> linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),*/ url(../img/ee.jpg);
     height: 100vh; 
+    left: 0;
+    right: 0;
     background-size: cover;
     background-position: center;
+    animation: animate 16s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,200%{
+        background-image: url(../img/charger7.jpg);
+    }
+    20%{
+        background-image: url(../img/charger4.jpg);
+    }
+    40%{
+        background-image: url(../img/charger3.jpg);
+    }
+    60%{
+        background-image: url(../img/challenger1.jpg);
+    }
+    80%{
+        background-image: url(../img/challenger2.jpg);
+    }
+    100%{
+        background-image: url(../img/ee.jpg);
+    }
+    120%{
+        background-image: url(../img/durango1.jpg);
+    }
+    140%{
+        background-image: url(../img/durango2.jpg);
+    }
+    160%{
+        background-image: url(../img/durango3.jpg);
+    }
+    180%{
+        background-image: url(../img/demon2.jpg);
+    }
 }
 
 body{
@@ -165,6 +202,7 @@ a:hover{
 }
 
 .logo img{
+    left: -50%;
     float: left;
     width: 150px;
     height: auto;
@@ -192,7 +230,7 @@ img.kunj:hover{
 }
 
 .ttl h1{    
-    color: red;
+    color: black;
     font-family: 'Arizonia', cursive;
     font-size: 70px;
     transform: translateX(-100rem);
@@ -207,7 +245,7 @@ h1.yo:hover{
 }
 
 .ttl span{
-    color: silver;
+    color: red;
     font-family: 'Arizonia', cursive;
 }
 
